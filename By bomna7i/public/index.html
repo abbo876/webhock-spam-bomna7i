@@ -1,43 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>لوحة تحكم أبو مناحي</title>
-    <script src="script.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-900 text-white min-h-screen flex flex-col justify-between">
-    <main class="p-6 max-w-xl mx-auto w-full">
-      <h1 class="text-3xl font-bold text-center mb-6">لوحة تحكم أبو مناحي 🔥</h1>
-      <div class="space-y-4 bg-gray-800 p-6 rounded-2xl shadow-lg">
-        <div>
-          <label class="block mb-1">رسالتك:</label>
-          <textarea id="message" rows="3" class="w-full p-2 rounded bg-gray-700 text-white"></textarea>
-        </div>
-        <div>
-          <label class="block mb-1">رابط Webhook:</label>
-          <input type="text" id="webhook" class="w-full p-2 rounded bg-gray-700 text-white" />
-        </div>
-        <div class="flex gap-4">
-          <div class="flex-1">
-            <label class="block mb-1">عدد الرسائل:</label>
-            <input type="number" id="count" value="10" class="w-full p-2 rounded bg-gray-700 text-white" />
-          </div>
-          <div class="flex-1">
-            <label class="block mb-1">الفاصل (ms):</label>
-            <input type="number" id="delay" value="100" class="w-full p-2 rounded bg-gray-700 text-white" />
-          </div>
-        </div>
-        <div class="flex justify-between mt-4">
-          <button onclick="startSending()" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-white">تشغيل</button>
-          <button onclick="stopSending()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white">إيقاف</button>
-        </div>
-      </div>
-    </main>
-
-    <footer class="text-center text-sm text-gray-400 p-4">
-      جميع الحقوق محفوظة © أبو مناحي | Snap: B_PQZ | سيرفرنا: <a href="https://discord.gg/TU1" class="text-blue-400 hover:underline">TU1</a>
-    </footer>
-  </body>
-</html>
